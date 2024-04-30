@@ -25,21 +25,24 @@ export default function Input({label, value, setValue, min, max}:InputProps){
 const WrapperSld = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 0px 10px;
+    margin: 0px 30px;
 `;
 
 const LabelSld = styled.label`
-    color: #FFF;
-    font-weight: 600;
-    font-size: 18px;
+    color: #FFFFFF;
+    margin: 30px 0px;
+    margin: 15px 0px 5px 0px;
+    font-size: 17px;
+    font-weight: 500;
 `;
 
 const InputSld = styled.input.attrs({type:"text"})`
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 12px;
+    padding: 7px;
     color: #000;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     width: 120px;
     text-align: right;
+    background-color: #DCDADE;
 `;

@@ -7,10 +7,10 @@ export default function Block({ color, children }: any) {
 const Sld = styled.div<Props>`
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 3px solid #aaa;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 30px;
+  border: 2px solid #FFF;
   background-color: ${(props) => props.color};
 `;
 
