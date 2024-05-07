@@ -1,14 +1,11 @@
 import styled from "styled-components";
-import RGB from "./pages/RGB";
-import HSLA from "./pages/HSLA";
-import CMYK from "./pages/CMYK";
+
+import Rotas from "./routes";
 
 export default function App() {
   return (
     <WrapperSld>
-      <RGB />
-      <HSLA />
-      <CMYK />
+      <Rotas></Rotas>
     </WrapperSld>
   );
 }
