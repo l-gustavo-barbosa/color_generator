@@ -4,10 +4,16 @@ import styled from "styled-components";
 import RGB from "../pages/RGB";
 import HSLA from "../pages/HSLA";
 import CMYK from "../pages/CMYK";
+import { CMYKContext, CMYKProvider } from "../contexts/CMYKContext";
+import { RGBProvider } from "../contexts/RGBContext";
+import { HSLAProvider } from "../contexts/HSLAContext";
 
 export default function Rotas() {
   return (
     <PageSld>
+    <CMYKProvider>
+    <RGBProvider>
+    <HSLAProvider>
       <BrowserRouter>
         <Menu />
         <BodySld>
@@ -18,6 +24,9 @@ export default function Rotas() {
           </Routes>
         </BodySld>
       </BrowserRouter>
+      </HSLAProvider>
+      </RGBProvider>
+      </CMYKProvider>
     </PageSld>
   );
 }

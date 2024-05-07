@@ -12,7 +12,6 @@ export function CMYKProvider({ children }: any) {
   const g = 255 * (1 - magenta/100) * (1 - key/100);
   const b = 255 * (1 - yellow/100) * (1 - key/100);
   const color = `rgb(${r}, ${g}, ${b})`;
-
   return (
     <CMYKContext.Provider
       value={{
@@ -25,9 +24,12 @@ export function CMYKProvider({ children }: any) {
         setYellow,
         setKey,
         color,
+
       }}
     >
+      
       {children}
     </CMYKContext.Provider>
+    
   );
 }

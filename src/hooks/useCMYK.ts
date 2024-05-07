@@ -3,4 +3,5 @@ import { CMYKContext } from "../contexts/CMYKContext";
 
 export default function useCMYK(){
     return useContext(CMYKContext);
+   
 }
